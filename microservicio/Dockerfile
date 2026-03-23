@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Instalar dependencias
-RUN pip install --no-cache-dir -r -requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Exponer puerto - 8080 Puerto solicitado por Google Cloud
 EXPOSE 8080
