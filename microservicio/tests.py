@@ -31,7 +31,7 @@ def request_sumar():
     }
     
     # Solicitud POST enviando los datos en formato JSON
-    response = requests.post(url, json = data, headers = headers) # Se agrega para aceptar HEADERS
+    response = requests.post(url, json = data, headers = headers) # Se agrega para aceptar HEADERS: headers = headers
     '''
     EJEMPLO CURL:
         curl -X POST http://localhost:8080/api/sumar -H "Content-Type: application/json" -d "{\"a\":5, \"b\":32}"
